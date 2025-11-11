@@ -1,0 +1,35 @@
+name: Deploy Function
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.x'
+        
+      - name: Install Dependencies
+        run: |
+          cd functions
+          touch .env
+          echo "PROJECT_ID='${{ secrets.PROJECT_ID }}'" >> .env
+          echo "CLIENT_EMAIL='${{ secrets.CLIENT_EMAIL }}'" >> .env
+          echo "PRIVATE_KEY='${{ secrets.PRIVATE_KEY }}'" >> .env
+          echo "GH_TOKEN='${{ secrets.GH_TOKEN }}'" >> .env
+          yarn install
+
+      - name: Install Firebase Tools
+        run: sudo npm install -g firebase-tools
+
+      - name: Deploy
+        run: |
+          cd functions
+          firebase deploy --only functions --token ${{ secrets.FIREBASE_TOKEN }}

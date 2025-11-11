@@ -1,0 +1,95 @@
+//Common Overwrites.. 
+
+$primary: blue;
+$dark: #333;
+$secondary: orange;
+$info: yellow;
+$danger: red;
+$success: green;
+$transparent: transparent;
+$white: white;
+$gray: lightgray;
+$black: black;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "dark": $dark,
+  "danger": $danger,
+  "success": $success,
+  "transparent": $transparent,
+  "white": $white,
+  "gray": $gray,
+  "black": $black
+);
+
+// $body-color: $black;
+// $dropdown-link-color: $black;
+// $dropdown-link-hover-color: $white;
+// $dropdown-link-hover-bg: $primary;
+// $navbar-dark-hover-color: rgba($white, .9);
+// $grid-gutter-width: 32px;
+// $input-border-color: $black;
+// $small-font-size: 12px;
+// $font-size-base: .8125rem;
+// $lead-font-size: 16px;
+// $h5-font-size: 16px;
+// $h4-font-size: 18px;
+// $h3-font-size: 24px;
+// $h2-font-size: 24px;
+$h1-font-size: 3rem;
+// $headings-line-height: 1.25;
+// $btn-border-radius: 24px;
+// $btn-border-radius-lg: 24px;
+// $btn-border-radius-sm: 24px;
+// $card-border-radius: 16px;
+// $input-border-radius: 0px;
+$font-family-monospace: roboto;
+$enable-responsive-font-sizes: true;
+
+$spacer: 1rem !default;
+$spacers: (
+  ) !default;
+$spacers: map-merge((0: 0,
+      4: ($spacer * .25),
+      8: ($spacer * .5),
+      12: ($spacer * .75),
+      16: ($spacer),
+      24: ($spacer * 1.5),
+      32: ($spacer * 2),
+      40: ($spacer * 2.5),
+      48: ($spacer * 3),
+      56: ($spacer * 3.5),
+      64: ($spacer * 4),
+      72: ($spacer * 4.5),
+      80: ($spacer * 5),
+      88: ($spacer * 5.5),
+      96: ($spacer * 6),
+      104: ($spacer * 6.5),
+      112: ($spacer * 7),
+      120: ($spacer * 7.5),
+      128: ($spacer * 8),
+      136: ($spacer * 8.5),
+      144: ($spacer * 9),
+      152: ($spacer * 9.5),
+      168: ($spacer * 10.5),
+    ),
+    $spacers
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+  ) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px) !default;
