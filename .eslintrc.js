@@ -49,5 +49,10 @@ module.exports = {
     'no-unused-vars': ['warn', {
       argsIgnorePattern: '_',
     }],
+    'comma-dangle': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react/jsx-closing-bracket-location': 'off',
+    'no-restricted-exports': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

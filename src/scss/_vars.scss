@@ -1,14 +1,27 @@
-//Common Overwrites.. 
+//Common Overwrites..
 
-$primary: blue;
-$dark: #333;
-$secondary: orange;
-$info: yellow;
-$danger: red;
-$success: green;
+// Forest Green & Tan Color System
+$forest-green: #2d5016;
+$forest-green-light: #3d6b1f;
+$forest-green-dark: #1d3a0d;
+$tan: #d4b896;
+$tan-light: #e5d4bb;
+$tan-dark: #b89968;
+$cream: #f5f0e8;
+$warm-gray: #6b6354;
+$charcoal: #2c2a26;
+
+// Bootstrap Variables
+$primary: $forest-green;
+$secondary: $tan;
+$dark: $charcoal;
+$light: $cream;
+$info: $forest-green-light;
+$danger: #c44536;
+$success: $forest-green;
 $transparent: transparent;
 $white: white;
-$gray: lightgray;
+$gray: $warm-gray;
 $black: black;
 
 $theme-colors: (
@@ -16,12 +29,16 @@ $theme-colors: (
   "secondary": $secondary,
   "info": $info,
   "dark": $dark,
+  "light": $light,
   "danger": $danger,
   "success": $success,
   "transparent": $transparent,
   "white": $white,
   "gray": $gray,
-  "black": $black
+  "black": $black,
+  "forest-green": $forest-green,
+  "tan": $tan,
+  "cream": $cream
 );
 
 // $body-color: $black;

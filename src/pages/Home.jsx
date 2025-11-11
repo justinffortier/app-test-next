@@ -1,19 +1,15 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import ContentWrapper from '@/components/ContentWrapper/ContentWrapper';
-
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Portfolio from '@/components/Portfolio';
+import Clients from '@/components/Clients';
 
 export default function Home() {
   return (
-    <ContentWrapper className="py-104 text-center">
-      <Container>
-        <Row>
-          <Col>
-            <h1 className="fw-200 mb-0">
-              hello world
-            </h1>
-          </Col>
-        </Row>
-      </Container>
-    </ContentWrapper>
+    <>
+      <Hero />
+      <Services />
+      <Portfolio />
+      <Clients />
+    </>
   );
 }
